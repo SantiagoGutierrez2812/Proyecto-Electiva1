@@ -15,5 +15,5 @@ https://www.figma.com/proto/hJkmii3rczuF6v1dSUXgaC/UANFOOTBALL?node-id=37-467&no
 # Perfil del equipo
 ![Perfil del equipo](/Imagenes/Equipo.png)
 # Trofeos del equipo
-![Trofeos del equipo](/Imagenes/Trofeo.png)
+![Trofeos del equipo](/Imagenes/Trofeos.png)
 
