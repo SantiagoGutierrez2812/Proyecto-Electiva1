@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/text_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/days_one"
+        android:text="Partidos"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_dashboard">
+
+        <Button
+            android:id="@+id/leftButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#625B71"
+            android:text="Ayer"
+            app:cornerRadius="30sp"
+            tools:layout_editor_absoluteX="71dp"
+            tools:layout_editor_absoluteY="189dp" />
+
+        <Button
+            android:id="@+id/centerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="#65558F"
+            android:text="Hoy"
+            app:cornerRadius="30sp"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <Button
+            android:id="@+id/rightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#625B71"
+            android:text="Mañana"
+            app:cornerRadius="30sp"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="343dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/leagueTitle1"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:background="#D9D9D9"
+        android:fontFamily="@font/days_one"
+        android:gravity="center"
+        android:text="Premier League"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttons" />
+
+    <GridLayout
+        android:id="@+id/match1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CEC7E1"
+        android:columnCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leagueTitle1">
+
+        <LinearLayout
+            android:id="@+id/teams1"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Liverpool"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="88dp"
+                tools:layout_editor_absoluteY="213dp" />
+
+            <TextView
+                android:id="@+id/team2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Arsenal"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="90dp"
+                tools:layout_editor_absoluteY="249dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="9dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/hour1"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="9:30 AM"
+            android:textStyle="bold" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/match2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#CEC7E1"
+        android:columnCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/match1">
+
+        <LinearLayout
+            android:id="@+id/teams2"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Chelsea"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="88dp"
+                tools:layout_editor_absoluteY="213dp" />
+
+            <TextView
+                android:id="@+id/team4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Man. United"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="90dp"
+                tools:layout_editor_absoluteY="249dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="9dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/hour2"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="11:00 AM"
+            android:textStyle="bold" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/match3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#CEC7E1"
+        android:columnCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/match2">
+
+        <LinearLayout
+            android:id="@+id/teams3"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Aston Villa"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="88dp"
+                tools:layout_editor_absoluteY="213dp" />
+
+            <TextView
+                android:id="@+id/team6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="WestHam"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="90dp"
+                tools:layout_editor_absoluteY="249dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="9dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/hour3"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="1:45 PM"
+            android:textStyle="bold" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/leagueTitle2"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_marginTop="8dp"
+        android:background="#D9D9D9"
+        android:fontFamily="@font/days_one"
+        android:gravity="center"
+        android:text="LaLiga"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/match3" />
+
+    <GridLayout
+        android:id="@+id/match4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CEC7E1"
+        android:columnCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leagueTitle2">
+
+        <LinearLayout
+            android:id="@+id/teams4"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="FC Barcelona"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="88dp"
+                tools:layout_editor_absoluteY="213dp" />
+
+            <TextView
+                android:id="@+id/team8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Osasuna"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="90dp"
+                tools:layout_editor_absoluteY="249dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="9dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/hour4"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="3:00 PM"
+            android:textStyle="bold" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/match5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#CEC7E1"
+        android:columnCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/match4">
+
+        <LinearLayout
+            android:id="@+id/teams5"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Real Madrid"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="88dp"
+                tools:layout_editor_absoluteY="213dp" />
+
+            <TextView
+                android:id="@+id/team10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Villarreal CF"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="90dp"
+                tools:layout_editor_absoluteY="249dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="9dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/hour5"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="4:30 PM"
+            android:textStyle="bold" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/match6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#CEC7E1"
+        android:columnCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/match5">
+
+        <LinearLayout
+            android:id="@+id/teams6"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Atl. Madrid"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="88dp"
+                tools:layout_editor_absoluteY="213dp" />
+
+            <TextView
+                android:id="@+id/team12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Girona"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="90dp"
+                tools:layout_editor_absoluteY="249dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="9dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/hour6"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="5:00 PM"
+            android:textStyle="bold" />
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

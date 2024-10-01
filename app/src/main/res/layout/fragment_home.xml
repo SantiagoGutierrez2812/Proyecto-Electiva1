@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <ImageView
+        android:id="@+id/news3"
+        android:layout_width="360dp"
+        android:scaleType="centerCrop"
+        android:layout_height="166dp"
+        android:src="@drawable/noticia3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/days_one"
+        android:text="Ligas destacadas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/news1" />
+
+    <ImageView
+        android:id="@+id/league1"
+        android:scaleType="centerCrop"
+        android:layout_width="87dp"
+        android:layout_height="86dp"
+        android:src="@drawable/liga1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toEndOf="@+id/league3"
+        app:layout_constraintTop_toBottomOf="@+id/textHome" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/days_one"
+        android:text="UANFOOTBALL"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/news1"
+        android:layout_width="124dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/noticia1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/news6" />
+
+    <ImageView
+        android:id="@+id/news4"
+        android:layout_width="192dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/noticia4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/news3" />
+
+    <ImageView
+        android:id="@+id/news2"
+        android:layout_width="228dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/noticia2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toEndOf="@+id/news1"
+        app:layout_constraintTop_toBottomOf="@+id/news4" />
+
+    <ImageView
+        android:id="@+id/league3"
+        android:layout_width="87dp"
+        android:layout_height="86dp"
+        android:src="@drawable/liga3"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toEndOf="@+id/league2"
+        app:layout_constraintTop_toBottomOf="@+id/textHome" />
+
+    <ImageView
+        android:id="@+id/league2"
+        android:layout_width="87dp"
+        android:layout_height="86dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/liga2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHome" />
+
+    <ImageView
+        android:id="@+id/news6"
+        android:layout_width="163dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/noticia6"
+        app:layout_constraintEnd_toStartOf="@+id/news4"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/news3" />
+
+    <ImageView
+        android:id="@+id/settingsIcon"
+        android:layout_width="34dp"
+        android:scaleType="centerCrop"
+        android:layout_height="34dp"
+        android:src="@drawable/settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/notificationsIcon"
+        android:layout_width="34dp"
+        android:scaleType="centerCrop"
+        android:layout_height="34dp"
+        android:src="@drawable/notifications"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/personIcon"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/person"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/league4"
+        android:layout_width="87dp"
+        android:layout_height="86dp"
+        android:src="@drawable/liga4"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toEndOf="@+id/league1"
+        app:layout_constraintTop_toBottomOf="@+id/textHome" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

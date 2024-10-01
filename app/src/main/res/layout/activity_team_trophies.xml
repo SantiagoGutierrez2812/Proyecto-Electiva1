@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/teamIcon"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barcelona" />
+
+    <TextView
+        android:id="@+id/teamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:text="F.C Barcelona"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/teamStadium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camp Nou"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamName" />
+
+    <TextView
+        android:id="@+id/teamMotto"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="Més que un club"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamIcon" />
+
+    <LinearLayout
+        android:id="@+id/teamButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamMotto">
+
+        <Button
+            android:id="@+id/matchesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FEF7FF"
+            android:text="Partidos"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="435dp" />
+
+        <Button
+            android:id="@+id/trophiesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E8DEF8"
+            android:text="Trofeos"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            tools:layout_editor_absoluteX="200dp"
+            tools:layout_editor_absoluteY="416dp" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/team1Trophy1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CEC7E1"
+        android:columnCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamButtons">
+
+        <LinearLayout
+            android:id="@+id/team1TrophyInfo1"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team1TrophyName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="Liga española"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="88dp"
+                tools:layout_editor_absoluteY="213dp" />
+
+            <TextView
+                android:id="@+id/team1TrophyYear1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="5dp"
+                android:text="Temporada 2022-2023"
+                tools:layout_editor_absoluteX="90dp"
+                tools:layout_editor_absoluteY="249dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/team1TrophyPhoto1"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/trofeo_liga_espanola" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/team1Trophy2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#CEC7E1"
+        android:columnCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1Trophy1">
+
+        <LinearLayout
+            android:id="@+id/team1TrophyInfo2"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team1TrophyName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="Supercopa de España"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="88dp"
+                tools:layout_editor_absoluteY="213dp" />
+
+            <TextView
+                android:id="@+id/team1TrophyYear2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="5dp"
+                android:text="Temporada 2022-2023"
+                tools:layout_editor_absoluteX="90dp"
+                tools:layout_editor_absoluteY="249dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/team1TrophyPhoto2"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:padding="13dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/trofeo_super_copa_espanola" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/team1Trophy3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#CEC7E1"
+        android:columnCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1Trophy2">
+
+        <LinearLayout
+            android:id="@+id/team1TrophyInfo3"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team1TrophyName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="Copa del Rey"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="88dp"
+                tools:layout_editor_absoluteY="213dp" />
+
+            <TextView
+                android:id="@+id/team1TrophyYear3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="5dp"
+                android:text="Temporada 2020-2021"
+                tools:layout_editor_absoluteX="90dp"
+                tools:layout_editor_absoluteY="249dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/team1TrophyPhoto3"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:padding="13dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/trofeo_copa_del_rey" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/team1Trophy4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#CEC7E1"
+        android:columnCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1Trophy3">
+
+        <LinearLayout
+            android:id="@+id/team1TrophyInfo4"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team1TrophyName4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="Champions League"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="88dp"
+                tools:layout_editor_absoluteY="213dp" />
+
+            <TextView
+                android:id="@+id/team1TrophyYear4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="5dp"
+                android:text="Temporada 2014-2015"
+                tools:layout_editor_absoluteX="90dp"
+                tools:layout_editor_absoluteY="249dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/team1TrophyPhoto4"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:padding="13dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/trofeo_champions_league" />
+
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
