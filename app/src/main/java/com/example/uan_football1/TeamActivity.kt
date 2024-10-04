@@ -5,25 +5,23 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class LoginActivity : AppCompatActivity() {
-
+class TeamActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_team)
 
-        setContentView(R.layout.activity_login)
-
-        val btn: Button = findViewById(R.id.login)
+        val btn: Button = findViewById(R.id.trophiesButton)
 
         btn.setOnClickListener {
-            val intent = Intent(this, MainActivity:: class.java)
+            val intent = Intent(this, TeamTrophiesActivity:: class.java)
             startActivity(intent)
         }
 
-        val btn2: Button = findViewById(R.id.signup)
+        val btn2: Button = findViewById(R.id.backTeam)
 
         btn2.setOnClickListener {
-            val intent2 = Intent(this, SignupActivity:: class.java)
-            startActivity(intent2)
+            finish()
         }
+
     }
 }

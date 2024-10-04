@@ -307,12 +307,12 @@
 
     </GridLayout>
 
-    <ImageView
-        android:id="@+id/back"
+    <Button
+        android:id="@+id/backTrophies"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
-        android:src="@drawable/back"
+        android:background="@drawable/back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.034"
         app:layout_constraintStart_toStartOf="parent"

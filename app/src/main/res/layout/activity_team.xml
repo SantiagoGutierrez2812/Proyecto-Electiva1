@@ -11,6 +11,7 @@
         android:layout_height="310dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/barcelona" />
@@ -334,12 +335,12 @@
 
     </GridLayout>
 
-    <ImageView
-        android:id="@+id/back"
+    <Button
+        android:id="@+id/backTeam"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
-        android:src="@drawable/back"
+        android:background="@drawable/back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.034"
         app:layout_constraintStart_toStartOf="parent"

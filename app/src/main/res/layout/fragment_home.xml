@@ -7,17 +7,6 @@
     tools:context=".ui.home.HomeFragment">
 
 
-    <ImageView
-        android:id="@+id/news3"
-        android:layout_width="360dp"
-        android:scaleType="centerCrop"
-        android:layout_height="166dp"
-        android:src="@drawable/noticia3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
     <TextView
         android:id="@+id/textHome"
         android:layout_width="wrap_content"
@@ -56,8 +45,8 @@
 
     <ImageView
         android:id="@+id/news1"
-        android:layout_width="124dp"
-        android:layout_height="108dp"
+        android:layout_width="127dp"
+        android:layout_height="104dp"
         android:layout_marginTop="8dp"
         android:scaleType="centerCrop"
         android:src="@drawable/noticia1"
@@ -70,18 +59,18 @@
         android:id="@+id/news4"
         android:layout_width="192dp"
         android:layout_height="84dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:scaleType="centerCrop"
         android:src="@drawable/noticia4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintHorizontal_bias="0.867"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/news3" />
+        app:layout_constraintTop_toBottomOf="@+id/news3Button" />
 
     <ImageView
         android:id="@+id/news2"
-        android:layout_width="228dp"
-        android:layout_height="109dp"
+        android:layout_width="220dp"
+        android:layout_height="105dp"
         android:layout_marginTop="8dp"
         android:scaleType="centerCrop"
         android:src="@drawable/noticia2"
@@ -116,13 +105,13 @@
         android:id="@+id/news6"
         android:layout_width="163dp"
         android:layout_height="84dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:scaleType="centerCrop"
         android:src="@drawable/noticia6"
         app:layout_constraintEnd_toStartOf="@+id/news4"
         app:layout_constraintHorizontal_bias="0.806"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/news3" />
+        app:layout_constraintTop_toBottomOf="@+id/news3Button" />
 
     <ImageView
         android:id="@+id/settingsIcon"
@@ -167,5 +156,19 @@
         app:layout_constraintHorizontal_bias="0.315"
         app:layout_constraintStart_toEndOf="@+id/league1"
         app:layout_constraintTop_toBottomOf="@+id/textHome" />
+
+
+    <ImageButton
+        android:id="@+id/news3Button"
+        android:layout_width="358dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="96dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/noticia3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

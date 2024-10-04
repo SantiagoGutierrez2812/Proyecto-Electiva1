@@ -12,14 +12,14 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_matches"
         android:name="com.example.uan_football1.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
+        android:label="@string/title_matches"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_search"
         android:name="com.example.uan_football1.ui.search.SearchFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/title_search"
         tools:layout="@layout/fragment_search" />
 </navigation>
