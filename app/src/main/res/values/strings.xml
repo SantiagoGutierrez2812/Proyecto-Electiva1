@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">UAN_FOOTBALL1</string>
-    <string name="title_home">Home</string>
+    <string name="title_home">Inicio</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_matches" />
     <string name="title_search" />
-    <string name="search">Search</string>
-    <string name="matches">Matches</string>
+    <string name="search">Busqueda</string>
+    <string name="matches">Partidos</string>
 </resources>
